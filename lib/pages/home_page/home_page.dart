@@ -48,12 +48,12 @@ class HomePage extends StatelessWidget {
               ),
               HomeContainer(
                 onClick: () {
-                  Get.to(
-                    () => PasteUrlPage(),
-                    transition: Transition.circularReveal,
-                    duration: const Duration(
-                      seconds: 1,
-                    ),
+                  Get.snackbar(
+                    '',
+                    'Just design Purpose',
+                    colorText: AppColor.white,
+                    //titleText: Text('hello'),
+                    snackPosition: SnackPosition.BOTTOM,
                   );
                 },
                 imageUrl: 'smartphone.png',
